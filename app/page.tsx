@@ -59,7 +59,7 @@ export default function AirportDisplay() {
   useEffect(() => {
     fetchFlights();
     // Refresh every 30 seconds
-    const interval = setInterval(fetchFlights, 30000);
+    const interval = setInterval(fetchFlights, 300000);
     return () => clearInterval(interval);
   }, []);
 
